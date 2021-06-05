@@ -17,7 +17,7 @@ function Main() {
 function App() {
   return (
     <div>
-      <header className="header">
+      <header className="nav-bar">
         <Navbar />
       </header>
       <main className="main">

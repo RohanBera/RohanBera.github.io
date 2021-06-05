@@ -2,33 +2,28 @@
 
 export const navItems = [
     {
-        text: "Rohan",
-        className: 'home',
-        linkTo: '/',
-    },
-    {
         text: "Skills",
-        className: 'skills',
+        className: 'rand-color-1',
         linkTo: '#skills',
     },
     {
         text: "Projects",
-        className: 'projects',
+        className: 'rand-color-2',
         linkTo: '/projects',
     },
     {
         text: "Experience",
-        className: 'experience',
+        className: 'rand-color-3',
         linkTo: '#experience',
     },
     {
         text: "About Me",
-        className: 'about',
+        className: 'rand-color-4',
         linkTo: '#about',
     },
     {
         text: "Get in touch",
-        className: 'contact',
+        className: 'rand-color-5',
         linkTo: '#contact',
     },
 ]
