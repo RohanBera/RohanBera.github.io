@@ -3,6 +3,9 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 import Navbar from './components/navbarComponents/Navbar'
 import Home from './components/homeComponents/Home'
+import About from './components/aboutmeComponents/Aboutme'
+import Skills from './components/skillsComponents/Skills'
+import Experience from './components/experienceComponents/Experience'
 import Projects from './components/projectsComponents/Projects'
 
 
@@ -10,6 +13,9 @@ function Main() {
   return (
     <React.Fragment>
       <Home />
+      <About />
+      <Skills />
+      <Experience />
     </React.Fragment>
   )
 }
