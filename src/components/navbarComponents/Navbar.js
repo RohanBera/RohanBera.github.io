@@ -1,11 +1,13 @@
 import React from 'react'
 import { navItems } from './navItems.js'
+import { Link } from 'react-router-dom'
 
 
 const NavItem = ({ text, linkTo, className }) => {
     return (
         <div className={`nav-link`}>
-            <a href={linkTo} className={className}>{text}</a>
+            <Link to={linkTo} className={className}>{text}</Link>
+            {/* <a href={linkTo} className={className}>{text}</a> */}
         </div>
     )
 }

@@ -27,12 +27,12 @@ function App() {
         <Navbar />
       </header>
       <main className="main">
-        <Router>
-          <Switch>
-            <Route exact path="/" component={Main}></Route>
-            <Route exact path="/projects" component={Projects}></Route>
-          </Switch>
-        </Router>
+        {/* <Router> */}
+        <Switch>
+          <Route exact path="/" component={Main}></Route>
+          <Route exact path="/projects" component={Projects}></Route>
+        </Switch>
+        {/* </Router> */}
       </main>
     </div>
   )
