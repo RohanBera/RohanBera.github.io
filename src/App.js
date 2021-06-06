@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Route, Switch } from 'react-router-dom'
+import { HashLink as Link } from 'react-router-hash-link';
 
 import Navbar from './components/navbarComponents/Navbar'
 import Home from './components/homeComponents/Home'
@@ -21,12 +22,25 @@ function Main() {
 }
 
 function App() {
+  const [visible, setVisible] = useState(false)
+
+  const toggleVisible = () => {
+    const scrolled = document.documentElement.scrollTop
+
+    scrolled > 300 ? setVisible(true) : setVisible(false)
+  }
+
+  window.addEventListener('scroll', toggleVisible)
+
   return (
     <div>
       <header className="nav-bar">
         <Navbar />
       </header>
       <main className="main">
+        {visible &&
+          <Link smooth to='#' className="scroll">Scr<span>oll to top</span></Link>
+        }
         <Switch>
           <Route exact path="/" component={Main}></Route>
           <Route exact path="/projects" component={Projects}></Route>
