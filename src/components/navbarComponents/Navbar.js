@@ -1,12 +1,13 @@
 import React from 'react'
 import { navItems } from './navItems.js'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
+import { HashLink as Link } from 'react-router-hash-link';
 
 
 const NavItem = ({ text, linkTo, className }) => {
     return (
         <div className={`nav-link`}>
-            <Link to={linkTo} className={className}>{text}</Link>
+            <Link smooth to={linkTo} className={className}>{text}</Link>
             {/* <a href={linkTo} className={className}>{text}</a> */}
         </div>
     )
