@@ -19,6 +19,18 @@ html {
     url(./assets/fonts/SamarkanNormal-Gg5D.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: "retro";
+  src: local("retro"),
+    url(./assets/fonts/NineteenNinetyThree-L1Ay.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "thin-tall";
+  src: local("thin-tall"),
+    url(./assets/fonts/GreenHostel-vma2y.ttf) format("truetype");
+}
+
 /* NAVBAR  */
 
 .nav-bar {
@@ -107,7 +119,7 @@ html {
   flex-direction: row;
 }
 
-.left {
+.home .left {
   display: flex;
   height: 100vh;
   width: 50%;
@@ -116,7 +128,7 @@ html {
   /* flex-grow: 1; */
 }
 
-.right {
+.home .right {
   display: flex;
   height: 100vh;
   width: 50%;
@@ -141,8 +153,8 @@ html {
     height: 90%;
   }
 
-  .left,
-  .right {
+  .home .left,
+  .home .right {
     height: 90vh;
     width: 100%;
     background-size: 100%;
@@ -155,7 +167,7 @@ html {
 }
 
 /* TODO: change font */
-.heading {
+.home .info .heading {
   font-family: "Open Sans", sans-serif;
   font-size: 100px;
   font-weight: 700;
@@ -163,14 +175,125 @@ html {
   text-shadow: -8px 8px yellow;
 }
 
-.heading .namaste {
+.home .info .heading .namaste {
   font-family: "namaste", sans-serif;
   letter-spacing: 2px;
 }
 
-.sub-heading {
+.home .info .sub-heading {
   font-family: "Open Sans", sans-serif;
   font-size: 50px;
   letter-spacing: -2px;
   font-weight: 100;
+}
+
+/* PROJECTS */
+
+.projects {
+  display: flex;
+  flex-direction: row;
+}
+
+.dots {
+  background-image: url("assets/images/dot.png");
+  background-position: left top;
+  /* opacity: 0.7; */
+}
+
+.projects .left {
+  display: flex;
+  /* TODO change height */
+  height: 1000vh;
+  width: 50%;
+  align-items: center;
+}
+
+.projects .right {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects .right .container {
+  position: fixed;
+}
+
+.projects .right .info {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 2px solid #333;
+  box-shadow: 10px 10px #111111;
+  padding: 40px 40px;
+}
+
+.projects .right .info .heading {
+  font-family: "retro", sans-serif;
+  font-size: 100px;
+  letter-spacing: -5px;
+}
+
+.projects .right .info .body {
+  font-family: monospace;
+  font-size: 25px;
+  font-weight: 100;
+}
+
+.projects .right .info .matter {
+  font-family: monospace;
+  font-size: 20px;
+  letter-spacing: -1px;
+  margin: 40px 0;
+}
+
+.projects .right .container a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border: 2px solid #333;
+  box-shadow: 10px 10px #111111;
+  padding: 15px 40px;
+  text-decoration: none;
+  font-family: monospace;
+  font-size: 20px;
+  color: #111111;
+
+  transition-duration: 300ms;
+}
+
+.projects .right .container a:hover {
+  box-shadow: 1px 1px #111111;
+
+  transition-duration: 300ms;
+}
+
+.projects .right .container a span {
+  font-family: "retro";
+  font-size: 24px;
+}
+
+@media screen and (max-width: 1300px) {
+  .projects {
+    flex-direction: column;
+    /* height: 90%; */
+  }
+
+  .projects .left {
+    height: 100vh;
+    width: 100%;
+  }
+
+  .projects .right {
+    margin-bottom: 100px;
+    height: fit-content;
+    width: 100%;
+  }
+
+  .projects .right .container {
+    position: relative;
+  }
 }
