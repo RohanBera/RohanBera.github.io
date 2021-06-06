@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 
 import Navbar from './components/navbarComponents/Navbar'
 import Home from './components/homeComponents/Home'
@@ -27,12 +27,10 @@ function App() {
         <Navbar />
       </header>
       <main className="main">
-        {/* <Router> */}
         <Switch>
           <Route exact path="/" component={Main}></Route>
           <Route exact path="/projects" component={Projects}></Route>
         </Switch>
-        {/* </Router> */}
       </main>
     </div>
   )

@@ -27,6 +27,16 @@ export default function Projects() {
                     </a>
                 </div>
             </div>
+            {/* 
+            <div class="marquee">
+                <span>this is a</span>
+                <span>simple marquee</span>
+                <span>using css</span>
+                <span>only tech</span>
+                <span>with a delay</span>
+                <span>brrrr</span>
+            </div> */}
+
         </div>
     )
 }
