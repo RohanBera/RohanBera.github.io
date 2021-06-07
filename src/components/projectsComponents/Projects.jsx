@@ -1,10 +1,20 @@
 import React from 'react'
 import GitHubIcon from '@material-ui/icons/GitHub';
 
+import Polaroid from './Polaroid'
+
 export default function Projects() {
     return (
         <div className='projects dots'>
-            <div className='left'> brrr</div>
+            <div className='left'>
+                <div style={{ height: 150 }}></div>
+                <Polaroid />
+                <Polaroid />
+                <Polaroid />
+                <Polaroid />
+                <Polaroid />
+
+            </div>
             <div className='right'>
                 <div className='container'>
                     <div className='info'>

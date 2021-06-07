@@ -220,10 +220,10 @@ html {
 
 .projects .left {
   display: flex;
-  /* TODO change height */
-  height: 1000vh;
+  flex-direction: column;
   width: 50%;
-  align-items: center;
+  padding-right: 50px;
+  align-items: flex-end;
 }
 
 .projects .right {
@@ -301,8 +301,12 @@ html {
   }
 
   .projects .left {
-    height: 100vh;
+    margin: 150px 0;
     width: 100%;
+    flex-direction: row;
+    padding-right: 0;
+    align-items: center;
+    overflow-x: auto;
   }
 
   .projects .right {
@@ -314,6 +318,80 @@ html {
   .projects .right .container {
     position: relative;
   }
+}
+
+/* polaroid */
+
+.polaroid {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  width: 500px;
+  min-width: 500px;
+  background-color: white;
+  padding: 20px;
+  border: 2px solid #333;
+  box-shadow: 10px 10px #111111;
+}
+
+.polaroid .polaroid-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.polaroid .polaroid-info .polaroid-heading {
+  font-family: "retro", sans-serif;
+  font-size: 25px;
+}
+
+.polaroid .polaroid-info .polaroid-body {
+  margin-top: 5px;
+  font-family: monospace;
+  font-size: 15px;
+}
+
+.polaroid .polaroid-info a {
+  display: inline-block;
+  align-self: flex-end;
+  margin-top: 10px;
+  border: 2px solid #333;
+  color: #111111;
+  background: #ffbd3c;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-family: monospace;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.old-paper {
+  position: relative;
+  max-width: 850px;
+}
+
+.original-image {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+.overlay {
+  mix-blend-mode: multiply;
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.overlay img {
+  width: 100%;
+  height: 100%;
+}
+
+.black-and-white {
+  filter: brightness(70%) contrast(150%) saturate(0%) brightness(150%);
 }
 
 /* marquee */
