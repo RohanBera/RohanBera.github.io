@@ -390,10 +390,6 @@ html {
   height: 100%;
 }
 
-.black-and-white {
-  filter: brightness(70%) contrast(150%) saturate(0%) brightness(150%);
-}
-
 /* marquee */
 /* 
 .marquee {

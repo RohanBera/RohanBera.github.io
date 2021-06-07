@@ -1,23 +1,23 @@
 import React from 'react'
 
-export default function Polaroid() {
+export default function Polaroid({ title, body, linkTo, img }) {
     return (
         <div className="polaroid">
             <div className="old-paper">
-                <img className="original-image black-and-white" src="https://i.imgur.com/ouDwClz.jpg" alt="background" />
+                <img className="original-image" src={img} alt="projectImage" />
                 <div className="overlay">
-                    <img src="https://i.imgur.com/4rKVgAQ.png" alt="projectimage" />
+                    <img src="https://i.imgur.com/4rKVgAQ.png" alt="background" />
                 </div>
             </div>
 
             <div className="polaroid-info">
                 <div className="polaroid-heading">
-                    Project title
+                    {title}
                 </div>
                 <div className="polaroid-body">
-                    Veniam aute laboris commodo id ut ad excepteur velit officia eu.
+                    {body}
                 </div>
-                <a href='github.com'>
+                <a href={linkTo}>
                     Read more...
                 </a>
             </div>

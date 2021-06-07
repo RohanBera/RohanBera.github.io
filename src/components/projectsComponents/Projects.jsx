@@ -2,17 +2,29 @@ import React from 'react'
 import GitHubIcon from '@material-ui/icons/GitHub';
 
 import Polaroid from './Polaroid'
+import { projectList } from './projectList'
 
 export default function Projects() {
     return (
         <div className='projects dots'>
             <div className='left'>
                 <div style={{ height: 150 }}></div>
-                <Polaroid />
-                <Polaroid />
-                <Polaroid />
-                <Polaroid />
-                <Polaroid />
+
+                {
+                    projectList.map((project, index) => {
+                        return (
+                            <Polaroid
+                                key={index}
+                                title={project.title}
+                                body={project.body}
+                                img={project.img}
+                                linkTo={project.linkTo}
+                            />
+                        );
+                    })
+                }
+
+                <div style={{ height: 150 }}></div>
 
             </div>
             <div className='right'>
