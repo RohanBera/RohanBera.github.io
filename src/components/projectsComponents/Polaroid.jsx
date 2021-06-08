@@ -1,12 +1,14 @@
 import React from 'react'
 
+import oldPaper from '../../assets/images/old-paper.png'
+
 export default function Polaroid({ title, body, linkTo, img }) {
     return (
         <div className="polaroid">
             <div className="old-paper">
                 <img className="original-image" src={img} alt="projectImage" />
                 <div className="overlay">
-                    <img src="https://i.imgur.com/4rKVgAQ.png" alt="background" />
+                    <img src={oldPaper} alt="background" />
                 </div>
             </div>
 
