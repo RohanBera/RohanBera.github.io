@@ -19,6 +19,7 @@ export default function Projects() {
                                 body={project.body}
                                 img={project.img}
                                 linkTo={project.linkTo}
+                                stack={project.stack}
                             />
                         );
                     })

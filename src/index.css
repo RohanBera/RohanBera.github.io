@@ -351,9 +351,24 @@ html {
   font-size: 15px;
 }
 
-.polaroid .polaroid-info a {
-  display: inline-block;
-  align-self: flex-end;
+.polaroid .polaroid-info .links {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.polaroid .polaroid-info .links .stack {
+  display: flex;
+}
+
+.polaroid .polaroid-info .links .stack img {
+  padding-top: 20px;
+  padding-right: 10px;
+  max-height: 50px;
+  max-width: 100px;
+}
+
+.polaroid .polaroid-info .links a {
   margin-top: 10px;
   border: 2px solid #333;
   color: #111111;
@@ -364,6 +379,52 @@ html {
   font-size: 15px;
   text-transform: uppercase;
 }
+
+/****************** EXTRAS *****************/
+
+/* tooltips */
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #4e4e4e;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  text-transform: capitalize;
+  font-family: monospace;
+  font-size: 16px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltiptext::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%; /* At the top of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #4e4e4e transparent;
+}
+
+/* old picture effect */
 
 .old-paper {
   position: relative;
@@ -392,6 +453,7 @@ html {
 }
 
 /* marquee */
+
 /* 
 .marquee {
   background-color: #ddd;
