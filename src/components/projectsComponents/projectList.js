@@ -33,7 +33,7 @@ export const projectList = [
         title: "Nirmaan",
         body: "Website for tech fest, Civil department, Osmania university",
         img: nirmaan,
-        linkTo: "https://rohanbera.github.io/Nirmaan/index.html#hero",
+        linkTo: "https://rohanbera.github.io/Nirmaan/index.html",
         stack: [images['linux.svg'], images['apache.svg'], images['mysql.svg'], images['php.svg']]
     },
     {
