@@ -30,6 +30,12 @@ html {
     url(./assets/fonts/GreenHostel-vma2y.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: "thin-round";
+  src: local("thin-round"),
+    url(./assets/fonts/Lato-Light.ttf) format("truetype");
+}
+
 /*************************** NAVBAR  ***************************/
 
 .nav-bar {
@@ -174,7 +180,8 @@ html {
 
   .home .left,
   .home .right {
-    height: 90vh;
+    height: auto;
+    min-height: 90vh;
     width: 100%;
     background-size: 100%;
   }
@@ -187,6 +194,7 @@ html {
 
 /* TODO: change font */
 .home .info .heading {
+  /* font-family: "Open Sans", sans-serif; */
   font-family: "Open Sans", sans-serif;
   font-size: 100px;
   font-weight: 700;
@@ -200,12 +208,69 @@ html {
 }
 
 .home .info .sub-heading {
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: "thin-round", sans-serif;
   font-size: 50px;
   letter-spacing: -2px;
   font-weight: 100;
 }
 
+/************************** ABOUT ME ************************/
+
+/* .about {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("assets/images/duck.png");
+} */
+
+.about .left {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about .left .about-gif {
+  width: 70%;
+}
+
+.about .left .about-gif img {
+  width: 100%;
+}
+
+.about .left .about-heading {
+  margin-top: 100px;
+  font-family: "thin-round", sans-serif;
+  /* font-weight: 900; */
+  font-size: 50px;
+}
+
+.about .right .about-info {
+  padding: 0 100px;
+}
+
+.about .right .about-info .heading-info {
+  font-family: "Open Sans", sans-serif;
+  font-size: 100px;
+  font-weight: 700;
+  letter-spacing: -5px;
+  text-shadow: -8px 8px yellow;
+  margin-bottom: 40px;
+}
+
+.about .right .about-info .main-info {
+  font-size: 35px;
+  font-family: "thin-round", sans-serif;
+}
+
+.about .right .about-info .sub-info {
+  font-size: 25px;
+  font-family: "thin-round", sans-serif;
+}
+
+.about .right .about-info .sub-info p {
+  margin: 20px 0;
+}
 /************************** PROJECTS ************************/
 
 .projects {
