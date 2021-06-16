@@ -2,8 +2,15 @@ import React from 'react'
 
 export default function Experience() {
     return (
-        <div id="experience">
-            Experience
+        <div class="home experience" id="experience">
+            <div className="left">
+
+            </div>
+
+            <div className="right">
+                Experience
+
+            </div>
         </div>
     )
 }

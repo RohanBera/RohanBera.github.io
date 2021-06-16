@@ -148,7 +148,8 @@ html {
   display: flex;
   height: 100vh;
   width: 50%;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   background-position: left top;
   /* flex-grow: 1; */
 }
@@ -170,6 +171,10 @@ html {
 
 .rohan {
   background-image: url("assets/images/rohan.jpeg");
+}
+
+.duck {
+  background-image: url("assets/images/rohan_duck.jpeg");
 }
 
 @media screen and (max-width: 1300px) {
@@ -217,17 +222,9 @@ html {
 
 /************************** ABOUT ME ************************/
 
-/* .about {
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 0.5)
-    ),
-    url("assets/images/duck.png");
-} */
-
 .about .left {
   justify-content: center;
-  flex-direction: column;
+  align-items: center;
 }
 
 .about .left .about-gif {
@@ -241,7 +238,6 @@ html {
 .about .left .about-heading {
   margin-top: 100px;
   font-family: "thin-round", sans-serif;
-  /* font-weight: 900; */
   font-size: 50px;
 }
 
@@ -271,6 +267,22 @@ html {
 .about .right .about-info .sub-info p {
   margin: 20px 0;
 }
+
+/************************** SKILLS ************************/
+
+.skills .left {
+  padding: 0 100px;
+}
+
+.skills .left .heading {
+  font-family: "Open Sans", sans-serif;
+  font-size: 100px;
+  font-weight: 700;
+  letter-spacing: -5px;
+  text-shadow: -8px 8px yellow;
+  margin-bottom: 40px;
+}
+
 /************************** PROJECTS ************************/
 
 .projects {
@@ -562,3 +574,38 @@ html {
     left: -100%;
   }
 } */
+
+/****************  GET IN TOUCH ******************/
+
+.contact .left {
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+}
+
+.contact .left {
+  padding: 0 100px;
+}
+
+.contact .left .contact-heading {
+  font-family: "Open Sans", sans-serif;
+  font-size: 100px;
+  font-weight: 700;
+  letter-spacing: -5px;
+  text-shadow: -8px 8px yellow;
+  margin-bottom: 40px;
+}
+
+.contact .right .about-info .main-info {
+  font-size: 35px;
+  font-family: "thin-round", sans-serif;
+}
+
+.contact .right .about-info .sub-info {
+  font-size: 25px;
+  font-family: "thin-round", sans-serif;
+}
+
+.contact .right .about-info .sub-info p {
+  margin: 20px 0;
+}
