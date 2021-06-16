@@ -8,7 +8,7 @@ import About from './components/aboutmeComponents/Aboutme'
 import Skills from './components/skillsComponents/Skills'
 import Experience from './components/experienceComponents/Experience'
 import Projects from './components/projectsComponents/Projects'
-
+import Getintouch from './components/getintouchComponents/Getintouch'
 
 function Main() {
   return (
@@ -17,6 +17,7 @@ function Main() {
       <About />
       <Skills />
       <Experience />
+      <Getintouch />
     </React.Fragment>
   )
 }
