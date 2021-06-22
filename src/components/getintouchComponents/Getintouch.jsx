@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
+import useSound from 'use-sound'
+
 import { getInTouchList } from './getintouchList'
 
 export default function Getintouch() {
+
     return (
         <div className="home contact" id="contact">
             <div className="left">
@@ -19,6 +22,7 @@ export default function Getintouch() {
                                     text={item.text}
                                     linkTo={item.linkTo}
                                     className={item.class}
+                                    note={item.note}
                                 />
                             )
                         })
@@ -31,9 +35,20 @@ export default function Getintouch() {
     )
 }
 
-const SocialLink = ({ text, Icon, linkTo, className }) => {
+const SocialLink = ({ text, Icon, linkTo, className, note }) => {
+    const [play] = useSound(
+        note, { volume: 0.3 }
+    )
+
+    const [hover, setHover] = useState(false)
+
     return (
-        <a title={text} className={`contact ${className}`} href={linkTo}>
+        <a title={text} className={`contact ${className}`} href={linkTo}
+            onMouseEnter={() => {
+                setHover(true)
+                play()
+            }}
+        >
             <Icon className='large-icon' fontSize='large' />
         </a>
     )
