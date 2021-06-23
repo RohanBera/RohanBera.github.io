@@ -16,7 +16,7 @@ const NavItem = ({ text, linkTo, className }) => {
 export default function Navbar() {
     return (
         <React.Fragment>
-            <div className='hero'>
+            <div className='nav-title'>
                 <a href='/'>Rohan</a>
             </div>
 
