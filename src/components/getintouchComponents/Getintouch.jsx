@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import useSound from 'use-sound'
 
 import { getInTouchList } from './getintouchList'
@@ -40,12 +40,9 @@ const SocialLink = ({ text, Icon, linkTo, className, note }) => {
         note, { volume: 0.3 }
     )
 
-    const [hover, setHover] = useState(false)
-
     return (
         <a title={text} className={`contact ${className}`} href={linkTo}
             onMouseEnter={() => {
-                setHover(true)
                 play()
             }}
         >
