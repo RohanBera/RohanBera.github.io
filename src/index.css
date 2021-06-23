@@ -199,9 +199,7 @@ html {
   color: #111111;
 }
 
-/* TODO: change font */
 .home .info .heading {
-  /* font-family: "Open Sans", sans-serif; */
   font-family: "Open Sans", sans-serif;
   font-size: 100px;
   font-weight: 700;
@@ -210,8 +208,15 @@ html {
 }
 
 .home .info .heading .namaste {
+  position: relative;
   font-family: "namaste", sans-serif;
   letter-spacing: 2px;
+
+  transition-duration: 300ms;
+}
+
+.home .info .heading .namaste:hover {
+  text-shadow: -3px 3px #f8e83d;
 }
 
 .home .info .sub-heading {
@@ -308,6 +313,124 @@ html {
 .skills .skills-info-container .skills-info .stack img {
   margin: 10px 15px;
   max-height: 50px;
+}
+
+/************************** EXPERIENCE ************************/
+
+.experience {
+  display: flex;
+  padding: 100px;
+  z-index: 5;
+  flex-direction: column;
+  height: 100vh;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.experience .exp-heading {
+  font-family: "Open Sans", sans-serif;
+  font-size: 100px;
+  font-weight: 700;
+  letter-spacing: -5px;
+  text-shadow: -10px 10px #f8e83d;
+  margin-bottom: 40px;
+}
+
+.experience .exp-cards-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.experience .exp-card {
+  margin: 50px 0;
+  background-color: white;
+  padding: 50px;
+  width: 30vw;
+  box-shadow: -15px 15px #182635;
+  border: 0.5px solid #182635;
+  position: relative;
+  font-family: "thin-round", sans-serif;
+  font-size: 20px;
+
+  transition-duration: 300ms;
+}
+
+.experience .exp-card:before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 15px;
+  right: -15px;
+  bottom: 15px;
+  border: 3px solid #182635;
+  z-index: -1;
+
+  transition-duration: 300ms;
+}
+
+.experience .exp-card:hover {
+  box-shadow: 15px -15px #182635;
+}
+
+.experience .exp-card:hover::before {
+  top: 15px;
+  left: -15px;
+  right: 15px;
+  bottom: -15px;
+}
+
+.experience .exp-card .job-title {
+  font-size: 35px;
+  margin-bottom: 5px;
+}
+
+.experience .exp-card .organization {
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.experience .exp-card .duration {
+  margin: 15px 0;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #414141;
+}
+
+.experience .exp-card .card-info a {
+  display: block;
+  width: fit-content;
+  text-decoration: none;
+  font-weight: 700;
+  border: 2px solid #182635;
+  color: #182635;
+  margin-top: 25px;
+  padding: 10px 15px;
+  background-color: #eee;
+
+  transition-duration: 300ms;
+}
+
+.experience .exp-card .card-info a:hover {
+  /* transform: skewX(24deg); */
+  color: white;
+  background-color: #182635;
+}
+
+@media screen and (max-width: 1300px) {
+  .experience {
+    margin: 100px 0;
+    height: auto;
+  }
+
+  .experience .exp-cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .experience .exp-card {
+    width: 70vw;
+  }
 }
 
 /************************** PROJECTS ************************/
