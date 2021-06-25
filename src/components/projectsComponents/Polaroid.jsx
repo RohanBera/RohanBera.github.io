@@ -1,17 +1,11 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 
 import oldPaper from '../../assets/images/old-paper.png'
 
 export default function Polaroid({ title, body, linkTo, img, stack }) {
-
-    const [mounted, didMount] = useState(false)
-
     useEffect(() => {
-        if (!mounted) {
-            window.scrollTo({ top: 0, behavior: 'smooth' })
-            didMount(true)
-        }
-    })
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+    }, [])
 
     return (
         <div className="polaroid">
