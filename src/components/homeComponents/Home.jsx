@@ -33,7 +33,7 @@ export default function Home() {
                     </div>
                     <div className="sub-heading">
                         I am Rohan Bera. <br />
-                        lorem ipsum dolor sit.
+                        I code.
                     </div>
                 </div>
             </div>
