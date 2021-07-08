@@ -3,6 +3,7 @@ import pydiva from '../../assets/images/projects/pydiva.png'
 import vams from '../../assets/images/projects/vams.jpeg'
 import bmazon from '../../assets/images/projects/bmazon.png'
 import cheese from '../../assets/images/projects/cheese.png'
+import anime from '../../assets/images/projects/anime.png'
 
 function importAll(r) {
     let images = {};
@@ -35,6 +36,13 @@ export const projectList = [
         img: nirmaan,
         linkTo: "https://rohanbera.github.io/Nirmaan/index.html",
         stack: [images['linux.svg'], images['apache.svg'], images['mysql.svg'], images['php.svg']]
+    },
+    {
+        title: "Anime recommender",
+        body: "Recommends what anime you should watch next based on your anime watch history.",
+        img: anime,
+        linkTo: "https://github.com/RohanBera/Recommendation-system",
+        stack: [images['python.svg']]
     },
     {
         title: "Bmazon",

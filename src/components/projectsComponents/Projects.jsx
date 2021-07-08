@@ -38,7 +38,8 @@ export default function Projects() {
                             Projects. Projects. Projects.
                         </div>
                         <div className='matter' >
-                            Lorem ipsum dolor sit amet, <br />consectetur adipiscing.
+                            Here are a few of my hand-crafted<br />
+                            projects and personal works.
                         </div>
                     </div>
                     <br />
