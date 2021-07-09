@@ -30,13 +30,12 @@ export default function Aboutme() {
                         I am a student at University of Hyderabad pursuing Integrated Mtech in Computer Science.
                     </div>
                     <div className="sub-info">
-                        <p>Sunt aliqua sunt ea nostrud qui duis.Commodo aute aliquip fugiat ea tempor non ea aliquip occaecat.
-                            Fugiat mollit exercitation consectetur mollit sint aute velit eiusmod nisi pariatur officia.Lorem eu amet magna veniam.
-                            Non aute commodo deserunt fugiat aute magna ipsum in. Nostrud fugiat laborum anim est dolor consequat. Lorem ut pariatur
-                            fugiat nostrud nulla aliqua cillum culpa exercitation eiusmod pariatur anim. Aliqua ullamco deserunt laborum nulla
-                            Elit enim ad esse elit qui.</p>
-                        {/* <p>When I am not coding, you'll find me at the gym or in my room with my guitar.</p> */}
-                        <p>Occaecat reprehenderit ullamco dolor cillum aute ut laborum laborum. </p>
+                        <p> I was introduced to the fascinating world of computers in 2008 when my dad brought home a Compaq desktop computer.
+                            Remember that one kid in your colony whose house you and your friends used to go to play the legendary Roadrash and bet on who gets the highest score?
+                            Well, I was that kid <span role="img" aria-labelledby="cool">😎</span>.
+                            I grew, and so did my fascination with computers.
+                        </p>
+                        <p>When I am not coding, you'll find me at the gym or in my room with my guitar.</p>
 
                     </div>
                 </div>
