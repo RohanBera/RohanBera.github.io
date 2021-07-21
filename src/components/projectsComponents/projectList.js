@@ -4,6 +4,7 @@ import vams from '../../assets/images/projects/vams.jpeg'
 import bmazon from '../../assets/images/projects/bmazon.png'
 import cheese from '../../assets/images/projects/cheese.png'
 import anime from '../../assets/images/projects/anime.png'
+import sort from '../../assets/images/projects/sort.png'
 
 function importAll(r) {
     let images = {};
@@ -29,6 +30,13 @@ export const projectList = [
         img: pydiva,
         linkTo: "https://github.com/RohanBera/Interpolation-using-PYDIVA",
         stack: [images['python.svg']]
+    },
+    {
+        title: "Sorting Visualizer",
+        body: "A responsive webapp to visualize how sorting algorithms work",
+        img: sort,
+        linkTo: "https://brogrammers-sorting-vis.netlify.app/",
+        stack: [images['react.svg']]
     },
     {
         title: "Nirmaan",
