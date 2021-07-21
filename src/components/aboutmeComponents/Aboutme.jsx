@@ -31,12 +31,11 @@ export default function Aboutme() {
                     </div>
                     <div className="sub-info">
                         <p> I was introduced to the fascinating world of computers in 2008 when my dad brought home a Compaq desktop computer.
-                            Remember that one kid in your colony whose house you and your friends used to go to play the legendary Roadrash and bet on who gets the highest score?
-                            Well, I was that kid <span role="img" aria-labelledby="cool">😎</span>.
-                            I grew, and so did my fascination with computers.
+                            I was immediately hooked to the operating system, the Graphical interface, and of course, the games that came along with it.
+                            Over the years, my fascination with computers kept growing.
+                            No matter who you are or where you're from, all you need is a notepad, and the world becomes your canvas.
                         </p>
                         <p>When I am not coding, you'll find me at the gym or in my room with my guitar.</p>
-
                     </div>
                 </div>
             </div>
