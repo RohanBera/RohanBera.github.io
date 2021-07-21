@@ -1,10 +1,10 @@
 {
   "main.css": "static/css/main.84f35339.css",
   "main.css.map": "static/css/main.84f35339.css.map",
-  "main.js": "static/js/main.f3deb1e8.js",
-  "main.js.map": "static/js/main.f3deb1e8.js.map",
-  "static/js/0.cb17d352.chunk.js": "static/js/0.cb17d352.chunk.js",
-  "static/js/0.cb17d352.chunk.js.map": "static/js/0.cb17d352.chunk.js.map",
+  "main.js": "static/js/main.ff0e8bee.js",
+  "main.js.map": "static/js/main.ff0e8bee.js.map",
+  "static/js/0.f41e58d4.chunk.js": "static/js/0.f41e58d4.chunk.js",
+  "static/js/0.f41e58d4.chunk.js.map": "static/js/0.f41e58d4.chunk.js.map",
   "static/media/GreenHostel-vma2y.ttf": "static/media/GreenHostel-vma2y.dc2a9bde.ttf",
   "static/media/Lato-Light.ttf": "static/media/Lato-Light.2fe27d9d.ttf",
   "static/media/NineteenNinetyThree-L1Ay.ttf": "static/media/NineteenNinetyThree-L1Ay.1505008f.ttf",
@@ -42,5 +42,6 @@
   "static/media/react.svg": "static/media/react.9a28da9f.svg",
   "static/media/rohan.jpeg": "static/media/rohan.c8d617ed.jpeg",
   "static/media/rohan_duck.jpeg": "static/media/rohan_duck.b3c3c556.jpeg",
+  "static/media/sort.png": "static/media/sort.d9b5176d.png",
   "static/media/vams.jpeg": "static/media/vams.c4372ef2.jpeg"
 }
