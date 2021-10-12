@@ -2,6 +2,15 @@
 
 Need to make a portfolio. Waited too long. 
 
+<hr/>
+## Hacktober boizz
+
+make my readme better. <br />
+Add link to my website if possible. <br />
+https://rohanbera.github.io/#/
+
+<hr/>
+
 ## Plan 
 
 **Topics**
