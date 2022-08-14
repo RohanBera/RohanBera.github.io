@@ -32,7 +32,7 @@ export default function Skills() {
 
                 </div>
             </div>
-            <div className="right image-align rohan"></div>
+            <div className="right image-align suit"></div>
         </div>
     )
 }

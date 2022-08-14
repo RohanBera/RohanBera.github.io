@@ -180,6 +180,10 @@ html {
   background-image: url("assets/images/rohan.jpeg");
 }
 
+.suit {
+  background-image: url("assets/images/rohan_suit.jpeg");
+}
+
 .duck {
   background-image: url("assets/images/rohan_duck.jpeg");
 }
