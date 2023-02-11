@@ -27,7 +27,7 @@ export default function Aboutme() {
                         about me.
                     </div>
                     <div className="main-info">
-                        I am a student at University of Hyderabad pursuing Integrated Mtech in Computer Science.
+                        I am a student at Georgia State University pursuing Masters in Computer Science.
                     </div>
                     <div className="sub-info">
                         <p> I was introduced to the fascinating world of computers in 2008 when my dad brought home a Compaq desktop computer.
