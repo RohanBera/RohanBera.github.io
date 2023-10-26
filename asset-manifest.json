@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.84f35339.css",
-  "main.css.map": "static/css/main.84f35339.css.map",
-  "main.js": "static/js/main.d8e3dd4b.js",
-  "main.js.map": "static/js/main.d8e3dd4b.js.map",
+  "main.css": "static/css/main.ad62335e.css",
+  "main.css.map": "static/css/main.ad62335e.css.map",
+  "main.js": "static/js/main.a516c43b.js",
+  "main.js.map": "static/js/main.a516c43b.js.map",
   "static/js/0.f41e58d4.chunk.js": "static/js/0.f41e58d4.chunk.js",
   "static/js/0.f41e58d4.chunk.js.map": "static/js/0.f41e58d4.chunk.js.map",
   "static/media/GreenHostel-vma2y.ttf": "static/media/GreenHostel-vma2y.dc2a9bde.ttf",
@@ -42,6 +42,7 @@
   "static/media/react.svg": "static/media/react.9a28da9f.svg",
   "static/media/rohan.jpeg": "static/media/rohan.c8d617ed.jpeg",
   "static/media/rohan_duck.jpeg": "static/media/rohan_duck.b3c3c556.jpeg",
+  "static/media/rohan_suit.jpeg": "static/media/rohan_suit.6c017c5a.jpeg",
   "static/media/sort.png": "static/media/sort.d9b5176d.png",
   "static/media/vams.jpeg": "static/media/vams.c4372ef2.jpeg"
 }
