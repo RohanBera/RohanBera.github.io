@@ -50,6 +50,7 @@ html {
   position: fixed;
   z-index: 100;
 }
+
 /* 
 .nav-title a {
   font-size: 30px;
@@ -331,7 +332,7 @@ html {
   padding: 100px;
   z-index: 5;
   flex-direction: column;
-  height: 100vh;
+  /* height: 100vh; */
   /* align-items: center; */
   justify-content: center;
 }
@@ -347,21 +348,61 @@ html {
 
 .experience .exp-cards-container {
   display: flex;
+
   justify-content: space-around;
+  align-items: center;
+  height: auto;
+  /* overflow-x: scroll; */
+  /* overflow-y: hidden; */
 }
 
 .experience .exp-card {
   margin: 50px 0;
+  /* margin-right: 100px; */
   background-color: white;
   padding: 50px;
-  width: 30vw;
+  width: 70%;
+  height: 450px;
   box-shadow: -15px 15px #182635;
   border: 0.5px solid #182635;
   position: relative;
   font-family: "thin-round", sans-serif;
   font-size: 20px;
 
+  display: none;
+
   transition-duration: 300ms;
+}
+
+.experience .exp-card.focus {
+  display: block;
+  zoom: normal;
+
+  z-index: 10;
+}
+
+.experience .exp-card.left-blurr {
+  position: absolute;
+  filter: blur(3px);
+  zoom: 75%;
+  translate: -200px;
+
+  z-index: 2;
+
+  display: block;
+
+}
+
+.experience .exp-card.right-blurr {
+  position: absolute;
+  filter: blur(3px);
+  zoom: 75%;
+  translate: 200px;
+
+  z-index: 2;
+
+  display: block;
+
 }
 
 .experience .exp-card:before {
@@ -652,12 +693,15 @@ html {
 .contact .left .contact-body a.instagram:hover {
   color: #da5eac;
 }
+
 .contact .left .contact-body a.mail:hover {
   color: #bd1616;
 }
+
 .contact .left .contact-body a.linkedin:hover {
   color: #014182;
 }
+
 .contact .left .contact-body a.github:hover {
   color: #111111;
 }
@@ -701,7 +745,8 @@ html {
 .tooltiptext::after {
   content: " ";
   position: absolute;
-  bottom: 100%; /* At the top of the tooltip */
+  bottom: 100%;
+  /* At the top of the tooltip */
   left: 50%;
   margin-left: -5px;
   border-width: 5px;
@@ -721,6 +766,7 @@ html {
   height: 100%;
   display: inline-block;
 }
+
 .overlay {
   mix-blend-mode: multiply;
   position: absolute;

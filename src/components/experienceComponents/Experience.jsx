@@ -1,6 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { exps } from './experiences'
 
 export default function Experience() {
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    const nextJob = () => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % exps.length);
+    };
+
+    const prevJob = () => {
+        setCurrentIndex((prevIndex) =>
+            prevIndex === 0 ? exps.length - 1 : prevIndex - 1
+        );
+    };
+
     return (
         <div className="experience" id="experience">
             <div className="exp-heading">
@@ -8,44 +21,37 @@ export default function Experience() {
             </div>
 
             <div className="exp-cards-container">
-                <div className="exp-card">
-                    <div className="job-title">
-                        SDE Intern
+                {exps.map((exp, idx) => (
+                    <div key={idx}
+                        // hidden by default
+                        className={"exp-card"
+                            + (idx === currentIndex ? ' focus' : '')
+                            + (idx === (currentIndex + 1) % exps.length ? ' right-blurr' : '')
+                            + (idx === (currentIndex - 1 + exps.length) % exps.length ? ' left-blurr' : '')
+                        }>
+                        <div className="job-title">
+                            {exp['job-title']}
+                        </div>
+                        <div>
+                            at <span className="organization">{exp.organisation}</span>
+                        </div>
+                        <div className="duration">
+                            {exp.duration['start-date']} to {exp.duration['end-date']}
+                        </div>
+                        <div className="card-info">
+                            <ul>
+                                {exp.work.map((w, wid) => (
+                                    <li key={wid}>{w}</li>
+                                ))}
+                            </ul>
+                            <a href={exp.link.href}>{exp.link.text}</a>
+                        </div>
                     </div>
-                    <div>
-                        at <span className="organization">INCOIS</span>
-                    </div>
-                    <div className="duration">
-                        3rd May 2019 to 9th June 2019
-                    </div>
-                    <div className="card-info">
-                        <ul>
-                            <li>Built a python program to interpolate ocean temperature and salinity values over a given ﬁnite set of ocean pressure values.</li>
-                            <li>Learnt use of python library ’pydiva’</li>
-                        </ul>
-                        <a href="https://github.com/RohanBera/Interpolation-using-PYDIVA">Read more...</a>
-                    </div>
-                </div>
-
-                <div className="exp-card">
-                    <div className="job-title">
-                        SDE Intern
-                    </div>
-                    <div>
-                        at <span className="organization">Apty</span>
-                    </div>
-                    <div className="duration">
-                        12th Oct 2020 to 30th Jan 2021
-                    </div>
-                    <div className="card-info">
-                        <ul>
-                            <li>Built an admin page to manage onboarding new users</li>
-                            <li>Built an e-commerce website, which was used as a testing ground for their product.</li>
-                            <li>Learnt ReactJS</li>
-                        </ul>
-                        <a href="https://github.com/RohanBera/Shopping">Read more...</a>
-                    </div>
-                </div>
+                ))}
+            </div>
+            <div className="buttons">
+                <button onClick={prevJob}> Prev</button>
+                <button onClick={nextJob}> Next</button>
             </div>
         </div>
     )
