@@ -357,13 +357,12 @@ html {
 }
 
 .experience .exp-card {
-  margin: 50px 0;
+  /* margin: 40px 0; */
   /* margin-right: 100px; */
   background-color: white;
   padding: 50px;
   width: 70%;
   height: 450px;
-  box-shadow: -15px 15px #182635;
   border: 0.5px solid #182635;
   position: relative;
   font-family: "thin-round", sans-serif;
@@ -371,12 +370,20 @@ html {
 
   display: none;
 
-  transition-duration: 300ms;
+  /* FOR THAT FANCY BOX SHADOW EFFECT */
+  /* box-shadow: -15px 15px #182635; */
+  /* transition: box-shadow 300ms; */
+
+  /* translate: 200px; */
+  transition-duration: transform 300ms;
 }
 
 .experience .exp-card.focus {
   display: block;
   zoom: normal;
+
+  /* background-color: #fff; */
+  box-shadow: 0px 0px 100px 0px #eeffff;
 
   z-index: 10;
 }
@@ -385,7 +392,7 @@ html {
   position: absolute;
   filter: blur(3px);
   zoom: 75%;
-  translate: -200px;
+  transform: translate(-200px);
 
   z-index: 2;
 
@@ -397,7 +404,7 @@ html {
   position: absolute;
   filter: blur(3px);
   zoom: 75%;
-  translate: 200px;
+  transform: translate(200px);
 
   z-index: 2;
 
@@ -405,7 +412,8 @@ html {
 
 }
 
-.experience .exp-card:before {
+/* FOR THAT FANCY BOX SHADOW EFFECT */
+/* .experience .exp-card:before {
   content: "";
   position: absolute;
   top: -15px;
@@ -427,7 +435,7 @@ html {
   left: -15px;
   right: 15px;
   bottom: -15px;
-}
+} */
 
 .experience .exp-card .job-title {
   font-size: 35px;
