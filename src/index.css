@@ -145,6 +145,10 @@ html {
 
 /*************************** HOME PAGE ***************************/
 
+.main {
+  overflow-x: hidden;
+}
+
 .home {
   height: 100%;
   width: 100%;
@@ -329,12 +333,13 @@ html {
 
 .experience {
   display: flex;
+  position: relative;
   padding: 100px;
   z-index: 5;
   flex-direction: column;
-  /* height: 100vh; */
+  height: 100vh;
   /* align-items: center; */
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .experience .exp-heading {
@@ -343,74 +348,117 @@ html {
   font-weight: 700;
   letter-spacing: -5px;
   text-shadow: -10px 10px #f8e83d;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .experience .exp-cards-container {
   display: flex;
+  position: relative;
 
+  width: 100%;
+  /* absolute madlad */
+  min-height: 450px;
   justify-content: space-around;
   align-items: center;
   height: auto;
-  /* overflow-x: scroll; */
-  /* overflow-y: hidden; */
+
+  transition: transform 0.5s ease;
 }
 
 .experience .exp-card {
-  /* margin: 40px 0; */
-  /* margin-right: 100px; */
+  position: absolute;
   background-color: white;
-  padding: 50px;
+  padding: 50px 50px 20px 50px;
   width: 70%;
   height: 450px;
   border: 0.5px solid #182635;
-  position: relative;
   font-family: "thin-round", sans-serif;
   font-size: 20px;
+  overflow-y: auto;
 
-  display: none;
-
+  z-index: -1;
+  filter: blur(5px);
+  zoom: 50%;
   /* FOR THAT FANCY BOX SHADOW EFFECT */
   /* box-shadow: -15px 15px #182635; */
   /* transition: box-shadow 300ms; */
 
-  /* translate: 200px; */
-  transition-duration: transform 300ms;
+  transition: transform 300ms;
 }
 
 .experience .exp-card.focus {
-  display: block;
+  filter: none;
   zoom: normal;
+  transform: translate(0px);
 
-  /* background-color: #fff; */
   box-shadow: 0px 0px 100px 0px #eeffff;
-
   z-index: 10;
 }
 
 .experience .exp-card.left-blurr {
-  position: absolute;
   filter: blur(3px);
   zoom: 75%;
   transform: translate(-200px);
 
-  z-index: 2;
-
-  display: block;
-
+  z-index: 3;
 }
 
 .experience .exp-card.right-blurr {
-  position: absolute;
   filter: blur(3px);
   zoom: 75%;
   transform: translate(200px);
 
   z-index: 2;
-
-  display: block;
-
 }
+
+.experience .exp-cards-container .prev,
+.experience .exp-cards-container .next {
+  position: absolute;
+  z-index: 20;
+}
+
+.experience .exp-cards-container .prev {
+  left: 2%;
+}
+
+.experience .exp-cards-container .next {
+  right: 2%;
+}
+
+.experience .experience-dots {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.experience .dot {
+  height: 15px;
+  width: 15px;
+  padding: 5px;
+  margin: 0px 5px;
+  border: none;
+  margin: none;
+  outline: none;
+  box-shadow: none;
+  border-radius: 50%;
+  background-color: #e7e7e7;
+  cursor: pointer;
+
+  transition-duration: 200ms;
+  /* z-index: 30; */
+}
+
+.experience .dot.focus {
+  background-color: #333;
+}
+
+/* 
+.experience .buttons .prev {
+  position: absolute;
+  right: ;
+} */
 
 /* FOR THAT FANCY BOX SHADOW EFFECT */
 /* .experience .exp-card:before {

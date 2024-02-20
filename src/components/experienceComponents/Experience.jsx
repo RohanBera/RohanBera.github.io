@@ -4,6 +4,14 @@ import { exps } from './experiences'
 export default function Experience() {
     const [currentIndex, setCurrentIndex] = useState(0);
 
+    const goToJob = (jobId) => {
+        console.log(jobId, currentIndex);
+
+        setCurrentIndex(jobId)
+
+        console.log(jobId, currentIndex);
+    }
+
     const nextJob = () => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % exps.length);
     };
@@ -21,6 +29,8 @@ export default function Experience() {
             </div>
 
             <div className="exp-cards-container">
+                <button className='prev' onClick={prevJob}> Prev</button>
+
                 {exps.map((exp, idx) => (
                     <div key={idx}
                         // hidden by default
@@ -48,10 +58,16 @@ export default function Experience() {
                         </div>
                     </div>
                 ))}
+                <button className='next' onClick={nextJob}> Next</button>
             </div>
-            <div className="buttons">
-                <button onClick={prevJob}> Prev</button>
-                <button onClick={nextJob}> Next</button>
+
+            <div className="experience-dots">
+                {
+                    exps.map((exp, idx) => (
+                        <button className={"dot" + (idx === currentIndex ? ' focus' : '')} key={idx} onClick={() => { goToJob(Number(idx)) }}>
+                        </button>
+                    ))
+                }
             </div>
         </div>
     )
