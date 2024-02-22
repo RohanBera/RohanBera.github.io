@@ -334,12 +334,12 @@ html {
 .experience {
   display: flex;
   position: relative;
-  padding: 100px;
+  padding: 70px 100px;
   z-index: 5;
   flex-direction: column;
   height: 100vh;
   /* align-items: center; */
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .experience .exp-heading {
